@@ -85,7 +85,7 @@ CREATE TABLE task_instance (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     task_id UUID NOT NULL REFERENCES task(id) ON DELETE CASCADE,
     sequence_number INTEGER NOT NULL,
-    status_id SMALLINT NOT NULL REFERENCES status(id) DEFAULT 1,
+    status_id SMALLINT NOT NULL REFERENCES status(id) DEFAULT 1, -- Store the latest status only
     reason TEXT,
     run_by UUID REFERENCES task_user(id),
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
