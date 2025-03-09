@@ -6,7 +6,7 @@ Question Link: https://github.com/ChorusInnovations/data-engineering-interview
 
 ### ER Diagram
 
-![ER Diagram](https://github.com/shamlikt/chorus_answer/blob/main/data_modeling/task.png)
+![ER Diagram](https://github.com/shamlikt/chorus_answers/blob/main/data_modeling/task.png)
 
 ### SQL Code
 
